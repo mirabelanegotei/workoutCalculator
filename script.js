@@ -12,7 +12,7 @@ const showError = (message)=>{
 
 const validateInputs = (a,b)=>{
     if(isNaN(a) || isNaN(b)){
-        showError("The inputs cannot be empty! Please enter values in both fields.");
+        showError("The inputs cannot be empty!\nPlease enter values in both fields.");
         return false;
     }
     return true;
