@@ -2,6 +2,7 @@
 <html>
     <header>
         <title>Calculator</title>
+        <script src="./script.js" defer></script>
     </header>
     <body>
         <form>
@@ -9,16 +10,15 @@
                 <input type="number" id="input1" placeholder="Enter first number"/>
                 <input type="number" id="input2" placeholder="Enter second number"/>
             </div>
-            <div>
-                <button type="button" id="add">+</button>
-                <button type="button" id="subtract">-</button>
-                <button type="button" id="multiply">*</button>
-                <button type="button" id="divide">/</button>
+            <div style="margin: 5px 0 5px 0;">
+                <button type="button" id="add">Add</button>
+                <button type="button" id="subtract">Substract</button>
+                <button type="button" id="multiply">Multiply</button>
+                <button type="button" id="divide">Divide</button>
             </div>
             <div>
                 <span id="result"></span>
             </div>
         </form>
-        <script src="./script.js"></script>
     </body>
 </html>

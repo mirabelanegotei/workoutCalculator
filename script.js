@@ -1,9 +1,9 @@
-const addButton = document.getElementById("add");
-const subtractButton = document.getElementById("subtract");
-const multiplyButton = document.getElementById("multiply");
-const divideButton = document.getElementById("divide");
+const addButton = document.querySelector("#add");
+const subtractButton = document.querySelector("#subtract");
+const multiplyButton = document.querySelector("#multiply");
+const divideButton = document.querySelector("#divide");
 
-const result = document.getElementById("result");
+const result = document.querySelector("#result");
 
 const showError = (message)=>{
     result.innerText = "Error: " + message;
@@ -20,8 +20,8 @@ const validateInputs = (a,b)=>{
 
 addButton.addEventListener("click", (event) => {
     event.preventDefault();
-    const a = parseFloat(document.getElementById("input1").value);
-    const b = parseFloat(document.getElementById("input2").value);
+    const a = parseFloat(document.querySelector("#input1").value);
+    const b = parseFloat(document.querySelector("#input2").value);
 
     if(validateInputs(a,b))
     {
